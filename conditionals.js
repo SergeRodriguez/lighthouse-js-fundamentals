@@ -1,11 +1,18 @@
-const temperature = 12;
+/*
+ * Programming Quiz: Find my Seat (4-8)
+ * 
+ * Write a nested for loop to print out all of the different seat combinations in the theater.
+ * The first row-seat combination should be 0-0 
+ * The last row-seat combination will be 25-99
+ * 
+ * Things to note: 
+ *  - the row and seat numbers start at 0, not 1
+ *  - the highest seat number is 99, not 100
+ */
 
-if (temperature < 0) {
-  console.log("Make sure you pick out a scarf!");
-} else if (temperature < 15) {
-  console.log("Short sleeves won't cut it!");
-} else {
-  console.log("Short sleeves are fine.");
+// Write your code here
+for (let x = 0; x <= 25; x++) {
+  for (let y = 0; y <= 99; y++) {
+    console.log(x+"-"+y);
+  }
 }
-
-console.log("Now you're ready to go outside!");
